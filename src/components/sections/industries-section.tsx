@@ -24,7 +24,7 @@ export function IndustriesSection() {
             <div key={item.title} className="panel h-full p-6">
               <item.icon className="h-6 w-6 text-gold" />
               <p className="mt-5 text-lg font-medium text-white">{item.title}</p>
-              <p className="mt-3 text-sm leading-7 text-white/65">{item.text}</p>
+              <p className="mt-3 text-sm leading-7 text-white/[0.65]">{item.text}</p>
             </div>
           ))}
         </div>

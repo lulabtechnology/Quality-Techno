@@ -33,7 +33,7 @@ export function UseCasesSection() {
           {useCases.map((item) => (
             <div key={item.title} className="panel p-6 md:p-7">
               <p className="text-lg font-medium text-white">{item.title}</p>
-              <p className="mt-3 text-sm leading-7 text-white/66">{item.text}</p>
+              <p className="mt-3 text-sm leading-7 text-white/[0.66]">{item.text}</p>
             </div>
           ))}
         </div>

@@ -34,7 +34,7 @@ export function ManufacturersSection() {
             {manufacturers.map((item) => (
               <div key={item.name} className="rounded-[24px] border border-white/10 bg-black/20 p-6 md:p-7">
                 <p className="text-lg font-medium text-white">{item.name}</p>
-                <p className="mt-3 text-sm leading-7 text-white/66">{item.text}</p>
+                <p className="mt-3 text-sm leading-7 text-white/[0.66]">{item.text}</p>
               </div>
             ))}
           </div>

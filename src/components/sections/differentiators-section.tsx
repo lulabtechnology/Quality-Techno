@@ -24,7 +24,7 @@ export function DifferentiatorsSection() {
             {differentiators.map((item, index) => (
               <div key={item} className="rounded-[22px] border border-white/10 bg-white/[0.03] p-5">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-gold/80">Diferencial {index + 1}</p>
-                <p className="mt-3 text-sm leading-7 text-white/68">{item}</p>
+                <p className="mt-3 text-sm leading-7 text-white/[0.68]">{item}</p>
               </div>
             ))}
           </div>

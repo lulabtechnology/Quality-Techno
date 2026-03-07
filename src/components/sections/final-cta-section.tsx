@@ -12,7 +12,7 @@ export function FinalCtaSection() {
               <h2 className="mt-4 text-3xl font-semibold leading-tight text-white md:text-5xl">
                 Cuando la operación es crítica, la conversación técnica también debe estar a otro nivel.
               </h2>
-              <p className="mt-5 text-base leading-8 text-white/72 md:text-lg">
+              <p className="mt-5 text-base leading-8 text-white/[0.72] md:text-lg">
                 Convirtamos la necesidad del cliente en una conversación bien encuadrada, profesional y visualmente convincente desde el primer contacto.
               </p>
             </div>

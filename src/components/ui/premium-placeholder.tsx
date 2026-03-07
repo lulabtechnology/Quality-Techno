@@ -18,7 +18,7 @@ export function PremiumPlaceholder({ label, ratio = "landscape", className }: Pr
   return (
     <div
       className={cn(
-        "relative overflow-hidden rounded-[28px] border border-white/10 bg-slateBlue/35",
+        "relative overflow-hidden rounded-[28px] border border-white/10 bg-slateBlue/[0.35]",
         "before:absolute before:inset-0 before:bg-hero-grid before:bg-[size:42px_42px] before:opacity-25",
         "after:absolute after:inset-0 after:bg-[radial-gradient(circle_at_top_left,rgba(215,181,109,0.22),transparent_28%),radial-gradient(circle_at_80%_18%,rgba(84,126,181,0.26),transparent_30%),linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.01))]",
         ratioClassMap[ratio],

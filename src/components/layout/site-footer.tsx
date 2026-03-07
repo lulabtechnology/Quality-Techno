@@ -22,7 +22,7 @@ export function SiteFooter() {
         <div className="grid gap-8 sm:grid-cols-2">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold/80">Navegación</p>
-            <div className="mt-4 space-y-2 text-sm text-white/65">
+            <div className="mt-4 space-y-2 text-sm text-white/[0.65]">
               {links.map((link) => (
                 <p key={link.href}>
                   <Link href={link.href} className="transition hover:text-white">{link.label}</Link>
@@ -32,7 +32,7 @@ export function SiteFooter() {
           </div>
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold/80">Contacto</p>
-            <div className="mt-4 space-y-2 text-sm text-white/65">
+            <div className="mt-4 space-y-2 text-sm text-white/[0.65]">
               <p><Link href="mailto:info@qualitytechnoservices.com" className="transition hover:text-white">info@qualitytechnoservices.com</Link></p>
               <p><Link href="https://wa.me/50768987181" className="transition hover:text-white">WhatsApp +507 6898-7181</Link></p>
               <p>Panamá</p>

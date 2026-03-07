@@ -43,7 +43,7 @@ body::before {
   }
 
   p {
-    @apply text-white/78;
+    @apply text-white/[0.78];
   }
 }
 

@@ -26,7 +26,7 @@ export function BenefitsSection() {
                 <ArrowUpRight className="h-4 w-4 text-white/30" />
               </div>
               <p className="mt-5 text-lg font-medium text-white">{item.title}</p>
-              <p className="mt-3 text-sm leading-7 text-white/66">{item.text}</p>
+              <p className="mt-3 text-sm leading-7 text-white/[0.66]">{item.text}</p>
             </div>
           ))}
         </div>

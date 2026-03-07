@@ -24,7 +24,7 @@ export function SolutionsSection() {
             <article key={item.title} className="panel p-6 md:p-7">
               <item.icon className="h-6 w-6 text-gold" />
               <h3 className="mt-5 text-xl font-medium text-white">{item.title}</h3>
-              <p className="mt-3 text-sm leading-7 text-white/66">{item.text}</p>
+              <p className="mt-3 text-sm leading-7 text-white/[0.66]">{item.text}</p>
             </article>
           ))}
         </div>

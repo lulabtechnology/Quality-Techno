@@ -33,7 +33,7 @@ export function FaqSection() {
           {faqs.map((faq) => (
             <div key={faq.q} className="panel p-6 md:p-7">
               <p className="text-lg font-medium text-white">{faq.q}</p>
-              <p className="mt-3 text-sm leading-7 text-white/66">{faq.a}</p>
+              <p className="mt-3 text-sm leading-7 text-white/[0.66]">{faq.a}</p>
             </div>
           ))}
         </div>

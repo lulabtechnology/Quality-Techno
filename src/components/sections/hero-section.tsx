@@ -23,7 +23,7 @@ export function HeroSection() {
           <h1 className="mt-6 max-w-4xl text-[2.9rem] font-semibold leading-[0.92] text-white sm:text-[3.5rem] md:text-[5.2rem]">
             Soluciones técnicas industriales con presencia premium, criterio serio y visión de continuidad operativa.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-white/72 md:text-xl">
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-white/[0.72] md:text-xl">
             Quality Techno Services S.A. se presenta como aliado estratégico para clientes que necesitan soporte especializado, confiabilidad de proceso y una interlocución técnica a la altura de industrias críticas.
           </p>
 

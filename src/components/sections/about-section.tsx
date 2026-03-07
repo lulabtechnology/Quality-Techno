@@ -21,7 +21,7 @@ export function AboutSection() {
           <div className="mt-8 space-y-4">
             {bullets.map((bullet) => (
               <div key={bullet} className="panel p-5">
-                <p className="text-sm leading-7 text-white/72">{bullet}</p>
+                <p className="text-sm leading-7 text-white/[0.72]">{bullet}</p>
               </div>
             ))}
           </div>

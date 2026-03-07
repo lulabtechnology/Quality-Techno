@@ -24,7 +24,7 @@ export function TrustSection() {
             <div className="grid gap-4 md:grid-cols-2">
               {trustPoints.map((point) => (
                 <div key={point} className="rounded-[22px] border border-white/10 bg-white/[0.03] p-5">
-                  <p className="text-sm leading-7 text-white/72">{point}</p>
+                  <p className="text-sm leading-7 text-white/[0.72]">{point}</p>
                 </div>
               ))}
             </div>
@@ -34,7 +34,7 @@ export function TrustSection() {
 
           <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4">
             {labels.map((label) => (
-              <div key={label} className="rounded-[20px] border border-white/10 bg-black/15 px-4 py-5 text-center text-sm font-medium text-white/78">
+              <div key={label} className="rounded-[20px] border border-white/10 bg-black/15 px-4 py-5 text-center text-sm font-medium text-white/[0.78]">
                 {label}
               </div>
             ))}

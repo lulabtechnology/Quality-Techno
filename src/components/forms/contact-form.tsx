@@ -52,7 +52,7 @@ export function ContactForm() {
           onChange={(e) => setForm((prev) => ({ ...prev, necesidad: e.target.value }))}
           placeholder="Cuéntenos brevemente el reto, la aplicación o el tipo de soporte que necesita."
           rows={6}
-          className="min-h-[160px] w-full rounded-[22px] border border-white/10 bg-black/20 px-4 py-3 text-sm text-white placeholder:text-white/32 focus:outline-none focus:ring-2 focus:ring-gold/35"
+          className="min-h-[160px] w-full rounded-[22px] border border-white/10 bg-black/20 px-4 py-3 text-sm text-white placeholder:text-white/[0.32] focus:outline-none focus:ring-2 focus:ring-gold/[0.35]"
         />
       </label>
 
@@ -89,7 +89,7 @@ function Field({ label, value, onChange, placeholder, type = "text" }: FieldProp
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
-        className="w-full rounded-[18px] border border-white/10 bg-black/20 px-4 py-3 text-sm text-white placeholder:text-white/32 focus:outline-none focus:ring-2 focus:ring-gold/35"
+        className="w-full rounded-[18px] border border-white/10 bg-black/20 px-4 py-3 text-sm text-white placeholder:text-white/[0.32] focus:outline-none focus:ring-2 focus:ring-gold/[0.35]"
       />
     </label>
   );

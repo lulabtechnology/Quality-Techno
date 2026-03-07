@@ -21,9 +21,9 @@ export function ProcessSection() {
         <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {steps.map((item) => (
             <div key={item.step} className="panel relative p-6 pt-16">
-              <div className="absolute left-6 top-6 text-3xl font-semibold text-gold/85">{item.step}</div>
+              <div className="absolute left-6 top-6 text-3xl font-semibold text-gold/[0.85]">{item.step}</div>
               <p className="text-lg font-medium text-white">{item.title}</p>
-              <p className="mt-3 text-sm leading-7 text-white/66">{item.text}</p>
+              <p className="mt-3 text-sm leading-7 text-white/[0.66]">{item.text}</p>
             </div>
           ))}
         </div>

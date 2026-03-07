@@ -17,7 +17,7 @@ export function BaseHero() {
           <h1 className="mt-6 max-w-3xl text-5xl font-semibold leading-[0.95] text-white md:text-7xl">
             Base premium para una presencia industrial institucional y visualmente superior.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-white/72 md:text-xl">
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-white/[0.72] md:text-xl">
             Esta Fase 2 deja lista la arquitectura visual y técnica sobre la que se montará la landing final de Quality Techno Services S.A.
           </p>
 
