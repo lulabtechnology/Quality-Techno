@@ -14,7 +14,8 @@ import { ContactSection } from "@/components/sections/contact-section";
 import { FinalCtaSection } from "@/components/sections/final-cta-section";
 
 export const metadata: Metadata = {
-  title: "Landing premium industrial",
+  title: "Quality Techno Services S.A. | Soluciones técnicas industriales en Panamá",
+  description: "Soporte técnico especializado, soluciones industriales, respaldo internacional y acompañamiento aplicado para continuidad operativa en Panamá.",
 };
 
 const organizationSchema = {

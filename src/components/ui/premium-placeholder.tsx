@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
 type PremiumPlaceholderProps = {
-  label: string;
+  label?: string;
   ratio?: "landscape" | "portrait" | "square" | "hero" | "wide";
   className?: string;
 };
@@ -17,24 +17,38 @@ const ratioClassMap = {
 export function PremiumPlaceholder({ label, ratio = "landscape", className }: PremiumPlaceholderProps) {
   return (
     <div
+      aria-label={label || "visual industrial abstracto"}
       className={cn(
-        "relative overflow-hidden rounded-[28px] border border-white/10 bg-slateBlue/[0.35]",
-        "before:absolute before:inset-0 before:bg-hero-grid before:bg-[size:42px_42px] before:opacity-25",
-        "after:absolute after:inset-0 after:bg-[radial-gradient(circle_at_top_left,rgba(215,181,109,0.22),transparent_28%),radial-gradient(circle_at_80%_18%,rgba(84,126,181,0.26),transparent_30%),linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.01))]",
+        "relative isolate overflow-hidden rounded-[28px] border border-white/10 bg-[#0c1522]",
+        "before:absolute before:inset-0 before:bg-hero-grid before:bg-[size:44px_44px] before:opacity-[0.12]",
         ratioClassMap[ratio],
         className,
       )}
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent" />
-      <div className="absolute left-5 top-5 rounded-full border border-white/15 bg-black/20 px-3 py-1 text-[11px] uppercase tracking-[0.25em] text-white/70">
-        Premium Placeholder
-      </div>
-      <div className="absolute inset-x-5 bottom-5 flex items-end justify-between gap-4">
-        <div>
-          <p className="text-xs uppercase tracking-[0.3em] text-gold/80">Asset Slot</p>
-          <p className="mt-2 max-w-xl text-lg font-medium text-white md:text-2xl">{label}</p>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(215,181,109,0.26),transparent_0,transparent_24%),radial-gradient(circle_at_82%_18%,rgba(74,129,196,0.22),transparent_0,transparent_28%),radial-gradient(circle_at_50%_100%,rgba(255,255,255,0.08),transparent_0,transparent_36%),linear-gradient(135deg,rgba(255,255,255,0.07),rgba(255,255,255,0.01)_38%,rgba(255,255,255,0.02)_100%)]" />
+      <div className="absolute -left-10 top-10 h-40 w-40 rounded-full border border-white/10 bg-white/[0.03] blur-[2px]" />
+      <div className="absolute right-8 top-8 h-24 w-24 rounded-full border border-gold/25 bg-gold/10 shadow-[0_0_80px_rgba(215,181,109,0.14)]" />
+      <div className="absolute bottom-10 left-8 right-8 grid gap-4 md:grid-cols-[1.2fr_0.8fr]">
+        <div className="rounded-[24px] border border-white/10 bg-black/20 p-5 backdrop-blur-md">
+          <div className="h-2 w-24 rounded-full bg-gold/60" />
+          <div className="mt-4 h-px w-full bg-white/10" />
+          <div className="mt-4 space-y-3">
+            <div className="h-3 w-[82%] rounded-full bg-white/15" />
+            <div className="h-3 w-[70%] rounded-full bg-white/10" />
+            <div className="h-3 w-[56%] rounded-full bg-white/10" />
+          </div>
         </div>
-        <div className="hidden h-14 w-14 rounded-full border border-white/15 bg-white/5 md:block" />
+        <div className="hidden rounded-[24px] border border-white/10 bg-white/[0.04] p-5 backdrop-blur-md md:block">
+          <div className="flex items-center justify-between">
+            <div className="h-10 w-10 rounded-full border border-white/15 bg-white/[0.06]" />
+            <div className="h-3 w-16 rounded-full bg-white/15" />
+          </div>
+          <div className="mt-5 grid grid-cols-2 gap-3">
+            <div className="h-14 rounded-2xl border border-white/10 bg-black/15" />
+            <div className="h-14 rounded-2xl border border-white/10 bg-black/15" />
+            <div className="col-span-2 h-20 rounded-2xl border border-gold/15 bg-gold/10" />
+          </div>
+        </div>
       </div>
     </div>
   );

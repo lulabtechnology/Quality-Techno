@@ -15,7 +15,7 @@ export function SiteFooter() {
         <div>
           <p className="text-lg font-semibold text-white">Quality Techno Services S.A.</p>
           <p className="mt-3 max-w-2xl text-sm leading-7 text-white/60">
-            Presencia digital premium orientada a transmitir respaldo técnico, continuidad operativa y criterio industrial serio para clientes y aliados de alto nivel.
+            Soporte técnico industrial, respaldo de fabricantes internacionales y una presencia digital diseñada para transmitir seriedad, confianza y continuidad operativa.
           </p>
         </div>
 

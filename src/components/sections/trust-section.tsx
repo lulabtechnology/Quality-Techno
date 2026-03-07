@@ -1,10 +1,10 @@
 import { SectionHeading } from "@/components/ui/section-heading";
 
 const trustPoints = [
-  "Soporte técnico in situ, capacitación y seminarios orientados a aplicación industrial.",
-  "Narrativa construida para compras, mantenimiento, operaciones y gerencia técnica.",
-  "Integración visual de ecosistema de fabricantes y tecnologías de proceso.",
-  "Lenguaje premium institucional para fortalecer percepción de respaldo internacional.",
+  "Interlocución técnica enfocada en continuidad operativa, protección de activos y confiabilidad de proceso.",
+  "Acompañamiento comercial y técnico para proyectos, reposiciones, mejoras y soporte especializado.",
+  "Presentación clara de fabricantes internacionales y capacidades que fortalecen la percepción de respaldo.",
+  "Experiencia digital diseñada para transmitir seriedad institucional desde el primer impacto.",
 ];
 
 const labels = ["AGI Industries", "Flowserve", "NOV / Fluid Motion Solutions", "Unique Polymer Systems"];
@@ -17,8 +17,8 @@ export function TrustSection() {
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
             <SectionHeading
               eyebrow="Credibilidad"
-              title="Una presencia diseñada para transmitir soporte serio, criterio técnico y capacidad de respuesta industrial."
-              description="La capa de confianza mezcla lenguaje institucional, jerarquía visual alta y una lectura clara de especialización técnica para que el primer impacto ya filtre leads de mejor calidad."
+              title="Una presencia pensada para transmitir capacidad técnica, respaldo y velocidad de respuesta."
+              description="La primera lectura debe dejar claro que QTS no compite como un proveedor genérico, sino como un aliado técnico preparado para acompañar decisiones relevantes en entornos exigentes."
             />
 
             <div className="grid gap-4 md:grid-cols-2">

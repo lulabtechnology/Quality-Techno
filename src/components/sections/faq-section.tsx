@@ -3,19 +3,19 @@ import { SectionHeading } from "@/components/ui/section-heading";
 const faqs = [
   {
     q: "¿Quality Techno Services vende productos o acompaña técnicamente la solución?",
-    a: "La narrativa de la landing posiciona a QTS como interlocutor técnico-comercial capaz de orientar, recomendar y acompañar una solución, no solamente de cotizar un ítem de forma aislada.",
+    a: "La propuesta posiciona a QTS como interlocutor técnico-comercial capaz de orientar, recomendar y acompañar la solución adecuada según criticidad, aplicación y objetivo operativo.",
   },
   {
-    q: "¿La página está pensada solo para clientes técnicos?",
-    a: "No. Está redactada para que la entiendan y valoren tanto perfiles técnicos como compras, gerencia y tomadores de decisión no especialistas.",
+    q: "¿La página está pensada solo para perfiles técnicos?",
+    a: "No. El contenido está diseñado para resultar sólido ante ingeniería y mantenimiento, pero también claro para compras, gerencia y tomadores de decisión no especialistas.",
   },
   {
-    q: "¿Se pueden reemplazar fácilmente los placeholders por imágenes reales?",
-    a: "Sí. El sistema deja rutas y slots definidos para sustituir hero, alianzas, industrias y otros bloques visuales sin romper la composición premium.",
+    q: "¿Se pueden sustituir estos visuales por fotografías reales?",
+    a: "Sí. La composición ya deja un sistema visual estable para reemplazar piezas abstractas por imágenes reales de planta, equipos, visitas o aplicaciones específicas.",
   },
   {
-    q: "¿La base ya está lista para GitHub Web y Vercel?",
-    a: "Sí. El proyecto final se entrega estructurado para copiar, subir al repositorio y desplegar con una guía breve y directa.",
+    q: "¿El proyecto ya está preparado para GitHub Web y Vercel?",
+    a: "Sí. La estructura del proyecto, la documentación y la configuración base están listas para publicar y seguir refinando sin rehacer la arquitectura.",
   },
 ];
 
@@ -25,8 +25,8 @@ export function FaqSection() {
       <div className="shell">
         <SectionHeading
           eyebrow="FAQ"
-          title="Preguntas frecuentes resueltas con lenguaje claro y percepción premium."
-          description="La sección FAQ reduce fricción y funciona como apoyo para leads que todavía están validando seriedad, alcance y facilidad de implementación."
+          title="Preguntas frecuentes resueltas con claridad y tono institucional."
+          description="La sección ayuda a reducir fricción y a reforzar la sensación de orden, criterio y facilidad de implementación."
         />
 
         <div className="mt-10 space-y-4">

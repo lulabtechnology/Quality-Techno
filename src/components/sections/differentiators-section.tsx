@@ -1,12 +1,12 @@
 import { SectionHeading } from "@/components/ui/section-heading";
 
 const differentiators = [
-  "Lenguaje técnico-comercial equilibrado para compradores y especialistas.",
-  "Arquitectura visual premium que fortalece autoridad sin caer en ruido visual.",
-  "Placeholders intencionales listos para sustituirse por activos finales sin romper el diseño.",
-  "Jerarquía editorial orientada a claridad, credibilidad y conversión industrial.",
-  "Base técnica moderna con Next.js 14, TypeScript y Tailwind lista para GitHub Web y Vercel.",
-  "SEO base, Open Graph y schema integrados para una presencia más sólida desde el despliegue.",
+  "Interlocución técnica y comercial en un mismo lenguaje, útil para compras y especialistas.",
+  "Presentación visual institucional capaz de elevar percepción de confianza desde el primer scroll.",
+  "Sistema visual flexible para sustituir activos abstractos por fotografía real sin romper la composición.",
+  "Jerarquía editorial clara para comunicar valor, respaldo y criterio aplicado sin saturar la pantalla.",
+  "Base moderna en Next.js, TypeScript y Tailwind lista para evolucionar con nuevas secciones y campañas.",
+  "Fundamentos de SEO técnico, Open Graph y schema ya integrados para una mejor salida a producción.",
 ];
 
 export function DifferentiatorsSection() {
@@ -16,8 +16,8 @@ export function DifferentiatorsSection() {
         <div className="panel overflow-hidden p-8 md:p-10 lg:p-12">
           <SectionHeading
             eyebrow="Diferenciadores"
-            title="Una landing concebida para parecer trabajo final de agencia premium enterprise."
-            description="Cada decisión apunta a una mezcla poco común en webs industriales pequeñas: contundencia visual, lectura ejecutiva limpia y soporte técnico creíble."
+            title="Una propuesta digital construida para proyectar autoridad, claridad y preparación."
+            description="La diferencia está en cómo se combinan narrativa, sistema visual y estructura comercial para que la marca se perciba más robusta, más confiable y más alineada con clientes industriales serios."
           />
 
           <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
