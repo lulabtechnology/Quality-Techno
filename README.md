@@ -1,33 +1,26 @@
-# Fase 2 — Base del proyecto
+# Quality Techno Services S.A. — Fase 4
 
-Esta fase contiene la base técnica y visual del proyecto para **Quality Techno Services S.A.**
+Proyecto final refinado de landing page premium industrial.
 
 ## Incluye
-- Proyecto base con **Next.js 14 + TypeScript + Tailwind CSS**
-- Estructura de carpetas lista para crecimiento por secciones
-- `layout` principal
-- estilos globales
-- componentes UI base reutilizables
-- navegación principal
-- footer base
-- placeholders premium para imágenes futuras
-- README de instalación
+- Landing completa en Next.js 14 + TypeScript + Tailwind CSS
+- Responsive desktop / mobile
+- Placeholders premium listos para reemplazo
+- Open Graph y metadata base
+- Schema JSON-LD
+- Sitemap y robots
+- Guías de instalación y despliegue
 
-## Instalación local
+## Inicio rápido
 1. Descomprime el ZIP.
 2. Abre la carpeta del proyecto.
-3. Ejecuta:
-   - `npm install`
-   - `npm run dev`
-4. Abre `http://localhost:3000`
+3. Ejecuta `npm install`
+4. Ejecuta `npm run dev`
+5. Abre `http://localhost:3000`
 
-## Estructura principal
-- `src/app` → App Router y estilos globales
-- `src/components/layout` → header y footer
-- `src/components/ui` → botones, headings, placeholders
-- `src/components/sections` → secciones base iniciales
-- `public/placeholders` → slots para assets futuros
-- `docs` → notas breves de activos
-
-## Nota
-La Fase 2 no es la landing final. Es la base robusta sobre la que se montará la Fase 3 completa.
+## Estructura clave
+- `src/app` → App Router, metadata, sitemap y robots
+- `src/components/sections` → todas las secciones de la landing
+- `src/components/forms` → formulario de contacto
+- `public/og` → asset OG base
+- `docs` → guías y documentación de despliegue / assets / SEO

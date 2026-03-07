@@ -1,0 +1,20 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0B1220"/>
+  <circle cx="240" cy="120" r="180" fill="#D7B56D" fill-opacity="0.12"/>
+  <circle cx="1000" cy="80" r="220" fill="#365882" fill-opacity="0.22"/>
+  <rect x="60" y="60" width="1080" height="510" rx="32" fill="url(#paint0_linear)" stroke="rgba(255,255,255,0.1)"/>
+  <path d="M60 220H1140" stroke="rgba(255,255,255,0.07)"/>
+  <path d="M60 390H1140" stroke="rgba(255,255,255,0.07)"/>
+  <text x="110" y="180" fill="#F0C36A" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="4">QUALITY TECHNO SERVICES S.A.</text>
+  <text x="110" y="280" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">Soluciones técnicas</text>
+  <text x="110" y="350" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">industriales premium</text>
+  <text x="110" y="432" fill="rgba(255,255,255,0.76)" font-family="Arial, Helvetica, sans-serif" font-size="24">Soporte especializado · continuidad operativa · respaldo internacional</text>
+  <rect x="860" y="430" width="190" height="52" rx="26" fill="#D7B56D"/>
+  <text x="904" y="463" fill="#0B1220" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">QTS</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="600" y1="60" x2="600" y2="570" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111B2E"/>
+      <stop offset="1" stop-color="#0D1524"/>
+    </linearGradient>
+  </defs>
+</svg>

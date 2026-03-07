@@ -17,7 +17,7 @@ const variants = {
 
 export function Button({ href, children, className, variant = "primary" }: ButtonProps) {
   const base = cn(
-    "inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition-all duration-300",
+    "inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/60",
     variants[variant],
     className,
   );
