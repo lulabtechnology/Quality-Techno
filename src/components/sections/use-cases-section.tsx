@@ -2,20 +2,20 @@ import { SectionHeading } from "@/components/ui/section-heading";
 
 const useCases = [
   {
-    title: "Recuperación de confiabilidad",
-    text: "Cuando una operación requiere elevar desempeño, reducir fugas, minimizar fallas repetitivas o revisar alternativas técnicas con mayor criterio.",
+    title: "Fallas repetitivas",
+    text: "Cuando una operación necesita revisar causas de desempeño deficiente, fugas, desgaste o paradas recurrentes.",
   },
   {
     title: "Ambientes agresivos",
-    text: "Escenarios con corrosión, erosión, ataque químico o exposición severa donde la protección de activos es crítica.",
+    text: "Aplicaciones con corrosión, erosión, abrasión o exposición química donde el activo requiere mayor protección.",
   },
   {
-    title: "Modernización o mejora",
-    text: "Casos donde un cliente necesita evolucionar desde una solución genérica hacia una más robusta y mejor sustentada.",
+    title: "Actualización de solución",
+    text: "Casos donde la alternativa actual quedó corta y se requiere una recomendación más robusta y mejor sustentada.",
   },
   {
-    title: "Capacitación de equipos",
-    text: "Necesidad de alinear mantenimiento, operación o compras alrededor de una mejor comprensión técnica del sistema.",
+    title: "Alineación de equipos",
+    text: "Necesidad de alinear mantenimiento, operaciones, ingeniería o compras alrededor de una mejor decisión técnica.",
   },
 ];
 
@@ -25,13 +25,13 @@ export function UseCasesSection() {
       <div className="shell grid gap-10 lg:grid-cols-[0.88fr_1.12fr]">
         <SectionHeading
           eyebrow="Aplicaciones / use cases"
-          title="Ejemplos de conversaciones para las que esta landing está preparada."
-          description="Las tarjetas ayudan a visualizar el tipo de reto que puede llegar por el formulario o WhatsApp, facilitando que el visitante se vea reflejado y actúe."
+          title="Retos típicos donde una conversación técnica bien dirigida cambia el resultado."
+          description="Estas situaciones ayudan a que el visitante se vea reflejado y entienda rápidamente cuándo tiene sentido abrir contacto con QTS."
         />
 
         <div className="grid gap-5 md:grid-cols-2">
           {useCases.map((item) => (
-            <div key={item.title} className="panel p-6 md:p-7">
+            <div key={item.title} className="panel p-6 md:p-7 transition-transform duration-300 hover:-translate-y-1">
               <p className="text-lg font-medium text-white">{item.title}</p>
               <p className="mt-3 text-sm leading-7 text-white/[0.66]">{item.text}</p>
             </div>

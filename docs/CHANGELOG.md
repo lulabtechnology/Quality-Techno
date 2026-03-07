@@ -1,12 +1,8 @@
 # CHANGELOG
 
-## Fase 4
-- Refinamiento completo de la home
-- Integración de secciones finales
-- Mejora de jerarquía visual y bloques premium
-- Integración de metadata final
-- Integración de Open Graph
-- Integración de schema JSON-LD
-- Integración de robots y sitemap
-- Inclusión de guías de GitHub Web, deploy, assets y SEO
-- Ajuste de footer, header, CTA y formulario de contacto
+## Fase 6 — Corrección brutal
+- Se eliminó el tono de prototipo en hero, trust, about, beneficios, use cases, FAQ y CTA final.
+- Se reemplazó el placeholder principal por una composición abstracta propia más institucional.
+- Se reforzó la jerarquía visual del header, footer, bloques y paneles.
+- Se ajustó el copy para enfocarlo en continuidad operativa, criterio técnico y respaldo internacional.
+- Se mantuvo la estructura lista para GitHub Web y Vercel.

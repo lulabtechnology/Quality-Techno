@@ -1,10 +1,10 @@
 import { SectionHeading } from "@/components/ui/section-heading";
 
 const steps = [
-  { step: "01", title: "Contexto operativo", text: "Levantamiento inicial del reto, criticidad, entorno y expectativas de desempeño." },
-  { step: "02", title: "Lectura técnica", text: "Análisis de especificación, condiciones de servicio y variables de aplicación." },
-  { step: "03", title: "Recomendación", text: "Presentación de solución o ruta técnica con un lenguaje claro y defendible." },
-  { step: "04", title: "Acompañamiento", text: "Seguimiento, soporte, capacitación o conversación técnica adicional según complejidad." },
+  { step: "01", title: "Entender la operación", text: "Se levanta el contexto, la criticidad y el comportamiento real de la aplicación." },
+  { step: "02", title: "Evaluar la condición", text: "Se revisan variables de servicio, desgaste, ambiente y objetivo técnico del cliente." },
+  { step: "03", title: "Recomendar con sustento", text: "Se plantea una ruta técnica y comercial clara, defendible y alineada a la necesidad." },
+  { step: "04", title: "Acompañar la implementación", text: "Se da continuidad con soporte, seguimiento, capacitación o conversación técnica adicional." },
 ];
 
 export function ProcessSection() {
@@ -13,8 +13,8 @@ export function ProcessSection() {
       <div className="shell">
         <SectionHeading
           eyebrow="Cómo trabajamos"
-          title="Un proceso presentado con claridad para transmitir método, no improvisación."
-          description="El flujo comercial y técnico debe sentirse ordenado, transparente y propio de una empresa preparada para relaciones B2B de alto nivel."
+          title="Un método claro para convertir necesidad operativa en solución aplicable."
+          description="La relación comercial debe sentirse ordenada, seria y técnicamente bien conducida desde el primer contacto."
           align="center"
         />
 

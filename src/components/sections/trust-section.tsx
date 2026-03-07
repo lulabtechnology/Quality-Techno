@@ -1,10 +1,10 @@
 import { SectionHeading } from "@/components/ui/section-heading";
 
 const trustPoints = [
-  "Interlocución técnica enfocada en continuidad operativa, protección de activos y confiabilidad de proceso.",
-  "Acompañamiento comercial y técnico para proyectos, reposiciones, mejoras y soporte especializado.",
-  "Presentación clara de fabricantes internacionales y capacidades que fortalecen la percepción de respaldo.",
-  "Experiencia digital diseñada para transmitir seriedad institucional desde el primer impacto.",
+  "Lectura técnica orientada a confiabilidad, continuidad y protección de activos.",
+  "Acompañamiento para reposiciones, mejoras, proyectos y revisiones de aplicación.",
+  "Presentación profesional para conversaciones con mantenimiento, compras, gerencia e ingeniería.",
+  "Respuesta consultiva que ayuda a reducir improvisación y acelerar decisiones mejor sustentadas.",
 ];
 
 const labels = ["AGI Industries", "Flowserve", "NOV / Fluid Motion Solutions", "Unique Polymer Systems"];
@@ -17,8 +17,8 @@ export function TrustSection() {
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
             <SectionHeading
               eyebrow="Credibilidad"
-              title="Una presencia pensada para transmitir capacidad técnica, respaldo y velocidad de respuesta."
-              description="La primera lectura debe dejar claro que QTS no compite como un proveedor genérico, sino como un aliado técnico preparado para acompañar decisiones relevantes en entornos exigentes."
+              title="Una presencia pensada para transmitir criterio, respaldo y capacidad de respuesta."
+              description="QTS debe sentirse como un aliado técnico serio desde el primer scroll: claro en lo comercial, sólido en lo técnico y confiable en la forma de presentar la solución."
             />
 
             <div className="grid gap-4 md:grid-cols-2">
@@ -34,7 +34,7 @@ export function TrustSection() {
 
           <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4">
             {labels.map((label) => (
-              <div key={label} className="rounded-[20px] border border-white/10 bg-black/15 px-4 py-5 text-center text-sm font-medium text-white/[0.78]">
+              <div key={label} className="rounded-[20px] border border-white/10 bg-black/20 px-4 py-5 text-center text-sm font-medium text-white/[0.82] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
                 {label}
               </div>
             ))}

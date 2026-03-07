@@ -10,10 +10,10 @@ export function FinalCtaSection() {
             <div className="max-w-3xl">
               <span className="eyebrow">CTA final</span>
               <h2 className="mt-4 text-3xl font-semibold leading-tight text-white md:text-5xl">
-                Cuando la operación es crítica, la conversación técnica también debe estar a otro nivel.
+                Cuando la operación es crítica, la decisión técnica no puede dejarse al azar.
               </h2>
               <p className="mt-5 text-base leading-8 text-white/[0.72] md:text-lg">
-                Convirtamos la necesidad del cliente en una conversación bien encuadrada, profesional y visualmente convincente desde el primer contacto.
+                Hable con Quality Techno Services S.A. para evaluar una necesidad industrial con una conversación más clara, más seria y mejor orientada al resultado.
               </p>
             </div>
 
@@ -21,7 +21,7 @@ export function FinalCtaSection() {
               <Button href="#contacto">
                 Solicitar contacto <ArrowUpRight className="ml-2 h-4 w-4" />
               </Button>
-              <Button href="https://wa.me/50768987181?text=Hola%20Quality%20Techno%20Services%2C%20deseo%20una%20conversaci%C3%B3n%20t%C3%A9cnica." variant="secondary">
+              <Button href="https://wa.me/50768987181?text=Hola%20Quality%20Techno%20Services%2C%20deseo%20evaluar%20una%20necesidad%20industrial." variant="secondary">
                 Ir a WhatsApp
               </Button>
             </div>

@@ -10,9 +10,9 @@ export function ContactSection() {
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
             <div>
               <SectionHeading
-                eyebrow="Formulario"
+                eyebrow="Contacto"
                 title="Abramos una conversación técnica seria."
-                description="El formulario se diseñó para capturar contexto suficiente sin hacer perder tiempo al lead. Se combina con correo prellenado y ruta directa a WhatsApp."
+                description="Comparta el contexto de su aplicación, necesidad operativa o requerimiento comercial y le daremos continuidad por la vía más conveniente."
               />
 
               <div className="mt-8 space-y-4">

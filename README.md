@@ -1,26 +1,15 @@
-# Quality Techno Services S.A. — Fase 5
+# Quality Techno Services S.A. — Fase 6
 
-Proyecto final refinado de landing page premium industrial.
+Versión de rescate visual enfocada en elevar la percepción institucional y reducir cualquier sensación de prototipo.
 
-## Incluye
-- Landing completa en Next.js 14 + TypeScript + Tailwind CSS
-- Responsive desktop / mobile
-- Placeholders premium listos para reemplazo
-- Open Graph y metadata base
-- Schema JSON-LD
-- Sitemap y robots
-- Guías de instalación y despliegue
+## Cambios clave
+- Hero rehecho con pieza visual abstracta propia
+- Copy más sobrio y menos explicativo
+- Secciones reescritas para sonar a marca final, no a entrega interna
+- Mayor tensión visual en tarjetas, bloques y jerarquía
+- Mejor presentación de fabricantes, beneficios y CTA
 
-## Inicio rápido
-1. Descomprime el ZIP.
-2. Abre la carpeta del proyecto.
-3. Ejecuta `npm install`
-4. Ejecuta `npm run dev`
-5. Abre `http://localhost:3000`
-
-## Estructura clave
-- `src/app` → App Router, metadata, sitemap y robots
-- `src/components/sections` → todas las secciones de la landing
-- `src/components/forms` → formulario de contacto
-- `public/og` → asset OG base
-- `docs` → guías y documentación de despliegue / assets / SEO
+## Ejecución
+1. Instalar dependencias con `npm install`
+2. Ejecutar en local con `npm run dev`
+3. Desplegar en Vercel o desde GitHub

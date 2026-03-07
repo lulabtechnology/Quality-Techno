@@ -4,18 +4,18 @@ const links = [
   { label: "Empresa", href: "#empresa" },
   { label: "Industrias", href: "#industrias" },
   { label: "Soluciones", href: "#soluciones" },
-  { label: "Fabricantes", href: "#fabricantes" },
+  { label: "Marcas", href: "#fabricantes" },
   { label: "Contacto", href: "#contacto" },
 ];
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-white/10 py-10 md:py-14">
+    <footer className="border-t border-white/10 py-12 md:py-16">
       <div className="shell grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
           <p className="text-lg font-semibold text-white">Quality Techno Services S.A.</p>
           <p className="mt-3 max-w-2xl text-sm leading-7 text-white/60">
-            Soporte técnico industrial, respaldo de fabricantes internacionales y una presencia digital diseñada para transmitir seriedad, confianza y continuidad operativa.
+            Acompañamiento técnico, soporte consultivo y respaldo de fabricantes internacionales para aplicaciones industriales donde la continuidad operativa importa.
           </p>
         </div>
 

@@ -2,10 +2,10 @@ import { ArrowUpRight, Gauge, Handshake, Shield, TimerReset } from "lucide-react
 import { SectionHeading } from "@/components/ui/section-heading";
 
 const benefits = [
-  { icon: Gauge, title: "Decisiones mejor fundamentadas", text: "Menos improvisación y más criterio técnico al evaluar opciones, riesgos y desempeño esperado." },
-  { icon: TimerReset, title: "Mayor velocidad comercial", text: "Una narrativa más clara acorta la distancia entre interés inicial y conversación seria con el cliente." },
-  { icon: Shield, title: "Percepción de menor riesgo", text: "La estética enterprise y el mensaje institucional ayudan a reducir fricción al evaluar proveedores técnicos." },
-  { icon: Handshake, title: "Relaciones más estratégicas", text: "La marca se posiciona como socio técnico de valor, no como opción intercambiable de bajo contexto." },
+  { icon: Gauge, title: "Decisiones mejor sustentadas", text: "Menos prueba y error al evaluar opciones de sellado, bombeo, protección o mejora operativa." },
+  { icon: TimerReset, title: "Menor tiempo de respuesta", text: "Una conversación bien encuadrada acelera diagnóstico, propuesta y avance comercial." },
+  { icon: Shield, title: "Menor percepción de riesgo", text: "El cliente entiende con más claridad que está frente a un proveedor con preparación y respaldo." },
+  { icon: Handshake, title: "Relaciones de mayor valor", text: "QTS se posiciona como aliado técnico, no como proveedor fácilmente reemplazable." },
 ];
 
 export function BenefitsSection() {
@@ -14,13 +14,13 @@ export function BenefitsSection() {
       <div className="shell grid gap-10 lg:grid-cols-[0.86fr_1.14fr] lg:items-start">
         <SectionHeading
           eyebrow="Beneficios"
-          title="Lo visual y lo comercial trabajan juntos para filtrar mejor, convencer mejor y elevar el nivel de la conversación."
-          description="Esta estructura no busca verse bonita solamente: busca fortalecer la conversión de un visitante técnico o comprador en una oportunidad más seria y mejor alineada."
+          title="Una presencia mejor diseñada también mejora la calidad del lead y de la conversación."
+          description="Cuando el mensaje y la forma están alineados, la marca transmite más autoridad, orden y capacidad para manejar aplicaciones de alto impacto."
         />
 
         <div className="grid gap-5 md:grid-cols-2">
           {benefits.map((item) => (
-            <div key={item.title} className="panel p-6">
+            <div key={item.title} className="panel p-6 transition-transform duration-300 hover:-translate-y-1">
               <div className="flex items-center justify-between gap-4">
                 <item.icon className="h-6 w-6 text-gold" />
                 <ArrowUpRight className="h-4 w-4 text-white/30" />

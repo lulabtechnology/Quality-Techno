@@ -14,9 +14,9 @@ body {
   @apply bg-ink text-white antialiased;
   background-image:
     radial-gradient(circle at top left, rgba(215,181,109,0.12), transparent 26%),
-    radial-gradient(circle at 90% 8%, rgba(55,94,139,0.22), transparent 28%),
-    radial-gradient(circle at 50% 100%, rgba(255,255,255,0.03), transparent 18%),
-    linear-gradient(180deg, #09111d 0%, #0b1220 28%, #101927 72%, #0a111c 100%);
+    radial-gradient(circle at 90% 8%, rgba(55,94,139,0.26), transparent 30%),
+    radial-gradient(circle at 50% 100%, rgba(255,255,255,0.04), transparent 20%),
+    linear-gradient(180deg, #07101a 0%, #0b1220 24%, #0d1524 56%, #09111d 100%);
 }
 
 body::before {
@@ -25,11 +25,20 @@ body::before {
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
-  background-size: 70px 70px;
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 72px 72px;
   mask-image: radial-gradient(circle at center, black 22%, transparent 82%);
-  opacity: 0.28;
+  opacity: 0.26;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 50% 0%, rgba(215,181,109,0.10), transparent 24%);
+  opacity: 0.9;
 }
 
 ::selection {
@@ -61,7 +70,7 @@ body::before {
   }
 
   .panel {
-    @apply rounded-[28px] border border-white/10 bg-white/[0.045] backdrop-blur-md shadow-soft;
+    @apply rounded-[30px] border border-white/10 bg-white/[0.045] backdrop-blur-md shadow-soft;
   }
 
   .panel-dark {

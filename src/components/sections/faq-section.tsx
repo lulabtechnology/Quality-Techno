@@ -2,20 +2,20 @@ import { SectionHeading } from "@/components/ui/section-heading";
 
 const faqs = [
   {
-    q: "¿Quality Techno Services vende productos o acompaña técnicamente la solución?",
-    a: "La propuesta posiciona a QTS como interlocutor técnico-comercial capaz de orientar, recomendar y acompañar la solución adecuada según criticidad, aplicación y objetivo operativo.",
+    q: "¿QTS solo suministra productos o también acompaña técnicamente la solución?",
+    a: "La propuesta de valor combina soporte técnico-comercial, lectura de aplicación y recomendación alineada a criticidad, desempeño y continuidad operativa.",
   },
   {
-    q: "¿La página está pensada solo para perfiles técnicos?",
-    a: "No. El contenido está diseñado para resultar sólido ante ingeniería y mantenimiento, pero también claro para compras, gerencia y tomadores de decisión no especialistas.",
+    q: "¿La conversación está orientada únicamente a perfiles técnicos?",
+    a: "No. El contenido está preparado para resultar sólido frente a ingeniería y mantenimiento, pero también claro para compras, gerencia y tomadores de decisión no especialistas.",
   },
   {
-    q: "¿Se pueden sustituir estos visuales por fotografías reales?",
-    a: "Sí. La composición ya deja un sistema visual estable para reemplazar piezas abstractas por imágenes reales de planta, equipos, visitas o aplicaciones específicas.",
+    q: "¿Pueden atender revisiones, mejoras o necesidades en sitio?",
+    a: "Sí. QTS puede participar desde el levantamiento del contexto hasta la recomendación, el acompañamiento y la coordinación técnica necesaria según el caso.",
   },
   {
-    q: "¿El proyecto ya está preparado para GitHub Web y Vercel?",
-    a: "Sí. La estructura del proyecto, la documentación y la configuración base están listas para publicar y seguir refinando sin rehacer la arquitectura.",
+    q: "¿Cómo se inicia una consulta?",
+    a: "Puede hacerse por formulario, correo o WhatsApp, compartiendo el reto, la aplicación o la necesidad operativa para orientar la conversación desde el inicio.",
   },
 ];
 
@@ -25,8 +25,8 @@ export function FaqSection() {
       <div className="shell">
         <SectionHeading
           eyebrow="FAQ"
-          title="Preguntas frecuentes resueltas con claridad y tono institucional."
-          description="La sección ayuda a reducir fricción y a reforzar la sensación de orden, criterio y facilidad de implementación."
+          title="Preguntas frecuentes resueltas con claridad."
+          description="Una sección breve para reducir fricción y facilitar que el visitante avance hacia la conversación técnica."
         />
 
         <div className="mt-10 space-y-4">

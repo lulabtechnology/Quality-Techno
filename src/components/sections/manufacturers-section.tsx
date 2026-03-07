@@ -3,19 +3,19 @@ import { SectionHeading } from "@/components/ui/section-heading";
 const manufacturers = [
   {
     name: "AGI Industries",
-    text: "Distribución de productos de manejo de fluidos, sistemas integrados y capacidades de empaque de sistemas con perfil fuertemente industrial.",
+    text: "Sistemas, componentes y soluciones de manejo de fluidos con enfoque industrial y capacidad de integración.",
   },
   {
     name: "Flowserve",
-    text: "Portafolio robusto en sellos mecánicos y soluciones de control de flujo orientadas a confiabilidad y desempeño en procesos exigentes.",
+    text: "Portafolio sólido en sellado mecánico, control de flujo y confiabilidad para procesos exigentes.",
   },
   {
     name: "NOV / Fluid Motion Solutions",
-    text: "Tecnologías para bombeo y manejo de fluidos en aplicaciones complejas donde la robustez operativa es clave.",
+    text: "Tecnologías de bombeo y movimiento de fluidos diseñadas para aplicaciones complejas y entornos duros.",
   },
   {
     name: "Unique Polymer Systems",
-    text: "Materiales compuestos de reparación y recubrimientos protectivos para erosión, corrosión y protección química.",
+    text: "Materiales compuestos y recubrimientos para reparación, protección y extensión de vida útil del activo.",
   },
 ];
 
@@ -26,15 +26,16 @@ export function ManufacturersSection() {
         <div className="panel overflow-hidden p-8 md:p-10 lg:p-12">
           <SectionHeading
             eyebrow="Fabricantes y alianzas"
-            title="Ecosistema de marcas y tecnologías que elevan la percepción de respaldo internacional."
-            description="La presentación de fabricantes se estructuró para que el visitante entienda que QTS no opera desde improvisación, sino desde una plataforma técnica con interlocución seria y soluciones alineadas a industrias exigentes."
+            title="Marcas con trayectoria global para conversaciones técnicas de mayor nivel."
+            description="La fortaleza comercial de QTS crece cuando el cliente percibe respaldo, seriedad y profundidad técnica detrás de cada recomendación."
           />
 
           <div className="mt-10 grid gap-5 md:grid-cols-2">
             {manufacturers.map((item) => (
-              <div key={item.name} className="rounded-[24px] border border-white/10 bg-black/20 p-6 md:p-7">
-                <p className="text-lg font-medium text-white">{item.name}</p>
-                <p className="mt-3 text-sm leading-7 text-white/[0.66]">{item.text}</p>
+              <div key={item.name} className="rounded-[24px] border border-white/10 bg-black/20 p-6 md:p-7 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold/85">Marca estratégica</p>
+                <p className="mt-4 text-2xl font-medium text-white">{item.name}</p>
+                <p className="mt-4 text-sm leading-7 text-white/[0.66]">{item.text}</p>
               </div>
             ))}
           </div>
