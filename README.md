@@ -1,23 +1,33 @@
-# QUALITY TECHNO SERVICES S.A. — FASE 1
+# Fase 2 — Base del proyecto
 
-Esta fase contiene la estrategia, dirección visual, arquitectura de información, guías de UX/CRO, SEO y assets/placeholders recomendados para construir la landing premium en Next.js.
+Esta fase contiene la base técnica y visual del proyecto para **Quality Techno Services S.A.**
 
-## Contenido
-- `/docs/01_brief_estrategico.md`
-- `/docs/02_direccion_visual.md`
-- `/docs/03_arquitectura_de_secciones.md`
-- `/docs/04_guia_de_marca.md`
-- `/docs/05_guia_ux_cro.md`
-- `/docs/06_guia_seo.md`
-- `/docs/07_wireframe_documentacion_visual.md`
-- `/docs/08_assets_y_placeholders.md`
-- `/docs/09_fuentes_y_referencias.md`
+## Incluye
+- Proyecto base con **Next.js 14 + TypeScript + Tailwind CSS**
+- Estructura de carpetas lista para crecimiento por secciones
+- `layout` principal
+- estilos globales
+- componentes UI base reutilizables
+- navegación principal
+- footer base
+- placeholders premium para imágenes futuras
+- README de instalación
 
-## Uso
-1. Leer primero `01_brief_estrategico.md`.
-2. Validar el tono y la estructura en `03_arquitectura_de_secciones.md`.
-3. Diseñar y construir la web siguiendo `02_direccion_visual.md`, `04_guia_de_marca.md` y `05_guia_ux_cro.md`.
-4. Preparar imágenes definitivas usando `08_assets_y_placeholders.md`.
+## Instalación local
+1. Descomprime el ZIP.
+2. Abre la carpeta del proyecto.
+3. Ejecuta:
+   - `npm install`
+   - `npm run dev`
+4. Abre `http://localhost:3000`
 
-## Estado
-Listo para pasar a Fase 2 (base del proyecto Next.js) y Fase 3 (implementación completa).
+## Estructura principal
+- `src/app` → App Router y estilos globales
+- `src/components/layout` → header y footer
+- `src/components/ui` → botones, headings, placeholders
+- `src/components/sections` → secciones base iniciales
+- `public/placeholders` → slots para assets futuros
+- `docs` → notas breves de activos
+
+## Nota
+La Fase 2 no es la landing final. Es la base robusta sobre la que se montará la Fase 3 completa.
