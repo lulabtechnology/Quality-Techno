@@ -14,8 +14,8 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-[#09111de0] backdrop-blur-2xl">
       <div className="shell flex min-h-[84px] items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-4">
-          <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-gold/20 bg-gradient-to-br from-white/10 to-white/[0.04] text-sm font-bold tracking-[0.18em] text-gold shadow-[0_0_0_1px_rgba(215,181,109,0.14)]">QTS</div>
+        <Link href="/" className="flex items-center gap-4 transition-transform duration-300 hover:translate-y-[-1px]">
+          <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-gold/20 bg-gradient-to-br from-white/10 to-white/[0.04] text-sm font-bold tracking-[0.18em] text-gold shadow-[0_0_0_1px_rgba(215,181,109,0.14)] transition-all duration-500 hover:border-gold/40 hover:shadow-[0_0_35px_rgba(215,181,109,0.18)]">QTS</div>
           <div>
             <p className="text-[13px] font-semibold uppercase tracking-[0.28em] text-white">Quality Techno Services</p>
             <p className="text-xs text-white/[0.56]">Soluciones técnicas industriales</p>
@@ -24,7 +24,7 @@ export function SiteHeader() {
 
         <nav className="hidden items-center gap-7 xl:flex">
           {navItems.map((item) => (
-            <Link key={item.href} href={item.href} className="text-sm text-white/[0.72] transition hover:text-white">
+            <Link key={item.href} href={item.href} className="text-sm text-white/[0.72] transition duration-300 hover:text-white hover:translate-y-[-1px]">
               {item.label}
             </Link>
           ))}

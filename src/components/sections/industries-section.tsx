@@ -1,5 +1,6 @@
 import { Factory, Fuel, Settings, Waves, Wheat } from "lucide-react";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { MotionStagger, MotionItem, HoverLift } from "@/components/ui/motion";
 
 const industries = [
   { icon: Factory, title: "Manufactura", text: "Procesos que exigen disponibilidad, consistencia y decisiones técnicas bien soportadas." },
@@ -19,15 +20,19 @@ export function IndustriesSection() {
           description="La propuesta habla con sectores donde una selección deficiente puede comprometer seguridad, disponibilidad, vida útil de activos y costo total de operación."
         />
 
-        <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-5">
+        <MotionStagger className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-5" delay={0.08} stagger={0.06}>
           {industries.map((item) => (
-            <div key={item.title} className="panel h-full p-6 transition-transform duration-300 hover:-translate-y-1">
-              <item.icon className="h-6 w-6 text-gold" />
-              <p className="mt-5 text-lg font-medium text-white">{item.title}</p>
-              <p className="mt-3 text-sm leading-7 text-white/[0.67]">{item.text}</p>
-            </div>
+            <MotionItem key={item.title}>
+              <HoverLift>
+                <div className="panel h-full p-6 hover-panel shine-border">
+                  <item.icon className="h-6 w-6 text-gold" />
+                  <p className="mt-5 text-lg font-medium text-white">{item.title}</p>
+                  <p className="mt-3 text-sm leading-7 text-white/[0.67]">{item.text}</p>
+                </div>
+              </HoverLift>
+            </MotionItem>
           ))}
-        </div>
+        </MotionStagger>
       </div>
     </section>
   );

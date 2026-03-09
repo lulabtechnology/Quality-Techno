@@ -1,5 +1,6 @@
 import { BookOpenCheck, Cog, GraduationCap, MapPinned, ShieldEllipsis, Wrench } from "lucide-react";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { MotionStagger, MotionItem, HoverLift } from "@/components/ui/motion";
 
 const solutions = [
   { icon: Wrench, title: "Soporte técnico especializado", text: "Revisión del reto, condiciones de operación y variables que influyen en desempeño, desgaste y confiabilidad." },
@@ -19,15 +20,19 @@ export function SolutionsSection() {
           title="Más que suministro: criterio aplicado para proteger desempeño y continuidad."
           description="El portafolio está presentado para dejar claro que QTS acompaña decisiones técnicas y comerciales con una lectura más profunda de la aplicación."
         />
-        <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+        <MotionStagger className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3" delay={0.08}>
           {solutions.map((item) => (
-            <article key={item.title} className="panel p-6 md:p-7 transition-transform duration-300 hover:-translate-y-1">
-              <item.icon className="h-6 w-6 text-gold" />
-              <h3 className="mt-5 text-xl font-medium text-white">{item.title}</h3>
-              <p className="mt-3 text-sm leading-7 text-white/[0.66]">{item.text}</p>
-            </article>
+            <MotionItem key={item.title}>
+              <HoverLift>
+                <article className="panel hover-panel shine-border p-6 md:p-7">
+                  <item.icon className="h-6 w-6 text-gold" />
+                  <h3 className="mt-5 text-xl font-medium text-white">{item.title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-white/[0.66]">{item.text}</p>
+                </article>
+              </HoverLift>
+            </MotionItem>
           ))}
-        </div>
+        </MotionStagger>
       </div>
     </section>
   );

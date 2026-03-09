@@ -1,4 +1,5 @@
 import { SectionHeading } from "@/components/ui/section-heading";
+import { MotionStagger, MotionItem, HoverLift, MotionLine } from "@/components/ui/motion";
 
 const manufacturers = [
   {
@@ -30,15 +31,21 @@ export function ManufacturersSection() {
             description="La fortaleza comercial de QTS crece cuando el cliente percibe respaldo, seriedad y profundidad técnica detrás de cada recomendación."
           />
 
-          <div className="mt-10 grid gap-5 md:grid-cols-2">
+          <MotionLine className="gold-line mt-8 h-px w-full" />
+
+          <MotionStagger className="mt-10 grid gap-5 md:grid-cols-2" delay={0.08} stagger={0.08}>
             {manufacturers.map((item) => (
-              <div key={item.name} className="rounded-[24px] border border-white/10 bg-black/20 p-6 md:p-7 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
-                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold/85">Marca estratégica</p>
-                <p className="mt-4 text-2xl font-medium text-white">{item.name}</p>
-                <p className="mt-4 text-sm leading-7 text-white/[0.66]">{item.text}</p>
-              </div>
+              <MotionItem key={item.name}>
+                <HoverLift>
+                  <div className="rounded-[24px] border border-white/10 bg-black/20 p-6 md:p-7 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] transition-all duration-500 hover:border-gold/30 hover:bg-white/[0.05] hover:shadow-[0_24px_60px_rgba(0,0,0,0.28)]">
+                    <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold/85">Marca estratégica</p>
+                    <p className="mt-4 text-2xl font-medium text-white">{item.name}</p>
+                    <p className="mt-4 text-sm leading-7 text-white/[0.66]">{item.text}</p>
+                  </div>
+                </HoverLift>
+              </MotionItem>
             ))}
-          </div>
+          </MotionStagger>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { SectionHeading } from "@/components/ui/section-heading";
+import { MotionStagger, MotionItem, HoverLift } from "@/components/ui/motion";
 
 const useCases = [
   {
@@ -29,14 +30,18 @@ export function UseCasesSection() {
           description="Estas situaciones ayudan a que el visitante se vea reflejado y entienda rápidamente cuándo tiene sentido abrir contacto con QTS."
         />
 
-        <div className="grid gap-5 md:grid-cols-2">
+        <MotionStagger className="grid gap-5 md:grid-cols-2" delay={0.08}>
           {useCases.map((item) => (
-            <div key={item.title} className="panel p-6 md:p-7 transition-transform duration-300 hover:-translate-y-1">
-              <p className="text-lg font-medium text-white">{item.title}</p>
-              <p className="mt-3 text-sm leading-7 text-white/[0.66]">{item.text}</p>
-            </div>
+            <MotionItem key={item.title}>
+              <HoverLift>
+                <div className="panel hover-panel p-6 md:p-7">
+                  <p className="text-lg font-medium text-white">{item.title}</p>
+                  <p className="mt-3 text-sm leading-7 text-white/[0.66]">{item.text}</p>
+                </div>
+              </HoverLift>
+            </MotionItem>
           ))}
-        </div>
+        </MotionStagger>
       </div>
     </section>
   );

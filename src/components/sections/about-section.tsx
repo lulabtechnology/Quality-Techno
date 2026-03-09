@@ -1,6 +1,7 @@
 import { ShieldCheck, SlidersHorizontal, Users2 } from "lucide-react";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { IndustrialVisual } from "@/components/visuals/industrial-visual";
+import { MotionStagger, MotionItem, HeroVisual, HoverLift } from "@/components/ui/motion";
 
 const bullets = [
   {
@@ -31,18 +32,24 @@ export function AboutSection() {
             description="Quality Techno Services S.A. articula soporte técnico, acompañamiento consultivo y respaldo internacional para atender aplicaciones donde la confiabilidad operativa pesa tanto como el precio."
           />
 
-          <div className="mt-8 space-y-4">
+          <MotionStagger className="mt-8 space-y-4" delay={0.12}>
             {bullets.map((bullet) => (
-              <div key={bullet.title} className="panel p-5">
-                <bullet.icon className="h-5 w-5 text-gold" />
-                <p className="mt-4 text-lg font-medium text-white">{bullet.title}</p>
-                <p className="mt-3 text-sm leading-7 text-white/[0.72]">{bullet.text}</p>
-              </div>
+              <MotionItem key={bullet.title}>
+                <HoverLift>
+                  <div className="panel hover-panel p-5">
+                    <bullet.icon className="h-5 w-5 text-gold" />
+                    <p className="mt-4 text-lg font-medium text-white">{bullet.title}</p>
+                    <p className="mt-3 text-sm leading-7 text-white/[0.72]">{bullet.text}</p>
+                  </div>
+                </HoverLift>
+              </MotionItem>
             ))}
-          </div>
+          </MotionStagger>
         </div>
 
-        <IndustrialVisual compact />
+        <HeroVisual>
+          <IndustrialVisual compact className="animate-float-premium" />
+        </HeroVisual>
       </div>
     </section>
   );

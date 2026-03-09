@@ -89,3 +89,57 @@ body::after {
     background: linear-gradient(90deg, rgba(215,181,109,0), rgba(215,181,109,0.7), rgba(215,181,109,0));
   }
 }
+
+
+@keyframes float-slow {
+  0%, 100% { transform: translate3d(0,0,0); }
+  50% { transform: translate3d(0,-10px,0); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.04); }
+}
+
+@layer utilities {
+  .animate-float-premium {
+    animation: float-slow 7s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .animate-glow-pulse {
+    animation: pulse-glow 6s ease-in-out infinite;
+  }
+
+  .hover-panel {
+    @apply transition-all duration-500;
+  }
+
+  .hover-panel:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 26px 80px rgba(0,0,0,0.28), 0 0 0 1px rgba(255,255,255,0.05);
+  }
+
+  .shine-border {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .shine-border::after {
+    content: "";
+    position: absolute;
+    inset: -120% auto auto -40%;
+    width: 42%;
+    height: 260%;
+    transform: rotate(18deg);
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+    transition: transform 900ms ease, opacity 900ms ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .shine-border:hover::after {
+    transform: translateX(250%) rotate(18deg);
+    opacity: 1;
+  }
+}
