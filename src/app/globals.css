@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 html {
@@ -11,135 +11,70 @@ html {
 }
 
 body {
-  @apply bg-ink text-white antialiased;
-  background-image:
-    radial-gradient(circle at top left, rgba(215,181,109,0.12), transparent 26%),
-    radial-gradient(circle at 90% 8%, rgba(55,94,139,0.26), transparent 30%),
-    radial-gradient(circle at 50% 100%, rgba(255,255,255,0.04), transparent 20%),
-    linear-gradient(180deg, #07101a 0%, #0b1220 24%, #0d1524 56%, #09111d 100%);
+  @apply bg-white text-ink antialiased;
 }
 
-body::before {
-  content: "";
-  position: fixed;
+.container-shell {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.section-pad {
+  @apply py-16 md:py-20 lg:py-24;
+}
+
+.section-title {
+  @apply font-display text-4xl leading-tight text-navy md:text-5xl;
+}
+
+.section-copy {
+  @apply mt-5 max-w-3xl text-lg leading-8 text-slate-600;
+}
+
+.card-panel {
+  @apply rounded-[28px] border border-line bg-white shadow-soft;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-xl bg-accent px-6 py-3 text-base font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-xl border border-white/40 bg-white/10 px-6 py-3 text-base font-semibold text-white backdrop-blur transition hover:bg-white/20;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center rounded-xl border border-navy px-5 py-3 text-base font-semibold text-navy transition hover:bg-navy hover:text-white;
+}
+
+.hero-image-frame {
+  @apply relative overflow-hidden rounded-[30px] border border-white/10 bg-slate-900 shadow-2xl;
+}
+
+.image-placeholder {
+  @apply relative overflow-hidden rounded-[26px] border border-white/15 bg-gradient-to-br from-slate-700 via-slate-800 to-slate-900;
+}
+
+.image-placeholder::before {
+  content: '';
+  position: absolute;
   inset: 0;
-  pointer-events: none;
+  background: linear-gradient(135deg, rgba(255,255,255,0.18), transparent 32%, transparent 68%, rgba(242,140,40,0.12));
+}
+
+.image-placeholder::after {
+  content: '';
+  position: absolute;
+  inset: auto -20% -30% auto;
+  width: 220px;
+  height: 220px;
+  border-radius: 9999px;
+  background: rgba(242, 140, 40, 0.14);
+  filter: blur(30px);
+}
+
+.grid-lines {
   background-image:
-    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
-  background-size: 72px 72px;
-  mask-image: radial-gradient(circle at center, black 22%, transparent 82%);
-  opacity: 0.26;
-}
-
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background: radial-gradient(circle at 50% 0%, rgba(215,181,109,0.10), transparent 24%);
-  opacity: 0.9;
-}
-
-::selection {
-  background: rgba(215,181,109,0.28);
-  color: #fff;
-}
-
-@layer base {
-  h1, h2, h3, h4 {
-    @apply tracking-tightest;
-  }
-
-  p {
-    @apply text-white/[0.78];
-  }
-}
-
-@layer components {
-  .shell {
-    @apply mx-auto w-full max-w-shell px-5 md:px-8;
-  }
-
-  .section-space {
-    @apply py-20 md:py-28;
-  }
-
-  .eyebrow {
-    @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.045] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-amber shadow-[0_0_0_1px_rgba(215,181,109,0.10)];
-  }
-
-  .panel {
-    @apply rounded-[30px] border border-white/10 bg-white/[0.045] backdrop-blur-md shadow-soft;
-  }
-
-  .panel-dark {
-    @apply rounded-[28px] border border-white/10 bg-black/20 backdrop-blur-md shadow-soft;
-  }
-
-  .divider {
-    @apply h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent;
-  }
-
-  .section-anchor {
-    @apply scroll-mt-28;
-  }
-
-  .gold-line {
-    background: linear-gradient(90deg, rgba(215,181,109,0), rgba(215,181,109,0.7), rgba(215,181,109,0));
-  }
-}
-
-
-@keyframes float-slow {
-  0%, 100% { transform: translate3d(0,0,0); }
-  50% { transform: translate3d(0,-10px,0); }
-}
-
-@keyframes pulse-glow {
-  0%, 100% { opacity: 0.6; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.04); }
-}
-
-@layer utilities {
-  .animate-float-premium {
-    animation: float-slow 7s ease-in-out infinite;
-    will-change: transform;
-  }
-
-  .animate-glow-pulse {
-    animation: pulse-glow 6s ease-in-out infinite;
-  }
-
-  .hover-panel {
-    @apply transition-all duration-500;
-  }
-
-  .hover-panel:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 26px 80px rgba(0,0,0,0.28), 0 0 0 1px rgba(255,255,255,0.05);
-  }
-
-  .shine-border {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .shine-border::after {
-    content: "";
-    position: absolute;
-    inset: -120% auto auto -40%;
-    width: 42%;
-    height: 260%;
-    transform: rotate(18deg);
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
-    transition: transform 900ms ease, opacity 900ms ease;
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  .shine-border:hover::after {
-    transform: translateX(250%) rotate(18deg);
-    opacity: 1;
-  }
+    linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 36px 36px;
 }

@@ -1,52 +1,35 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
-const config: Config = {
+export default {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
     extend: {
       colors: {
-        ink: "#0B1220",
-        steel: "#152132",
-        panel: "#111827",
-        gold: "#D7B56D",
-        amber: "#F0C36A",
-        mist: "#DCE5F0",
-        line: "rgba(255,255,255,0.10)",
-        slateBlue: "#24354A",
-      },
-      boxShadow: {
-        soft: "0 20px 60px rgba(0,0,0,0.18)",
-        glow: "0 0 0 1px rgba(215,181,109,0.18), 0 24px 90px rgba(0,0,0,0.24)",
-      },
-      backgroundImage: {
-        "hero-grid": "linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px)",
-        "hero-radial": "radial-gradient(circle at top, rgba(215,181,109,0.18), transparent 35%), radial-gradient(circle at 80% 20%, rgba(71,107,157,0.28), transparent 30%)",
+        ink: '#0D1B33',
+        navy: '#13294B',
+        steel: '#4C6288',
+        mist: '#EEF2F8',
+        line: '#D9E1EE',
+        accent: '#F28C28',
+        success: '#1F8F5F'
       },
       fontFamily: {
-        sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+        display: ['Georgia', 'Cambria', 'Times New Roman', 'serif']
       },
-      maxWidth: {
-        shell: "1240px",
+      boxShadow: {
+        panel: '0 20px 60px rgba(14, 27, 51, 0.08)',
+        soft: '0 10px 30px rgba(14, 27, 51, 0.06)'
       },
-      letterSpacing: {
-        tightest: "-0.04em",
-      },
-      animation: {
-        float: "float 10s ease-in-out infinite",
-      },
-      keyframes: {
-        float: {
-          "0%, 100%": { transform: "translateY(0px)" },
-          "50%": { transform: "translateY(-8px)" },
-        },
-      },
-    },
+      backgroundImage: {
+        'hero-overlay': 'linear-gradient(90deg, rgba(9,18,35,0.88) 0%, rgba(12,30,58,0.76) 38%, rgba(12,30,58,0.22) 100%)',
+        'section-glow': 'radial-gradient(circle at top, rgba(43,74,128,0.1), transparent 50%)'
+      }
+    }
   },
-  plugins: [],
-};
-
-export default config;
+  plugins: []
+} satisfies Config;

@@ -1,15 +1,28 @@
-# Quality Techno Services S.A. — Fase 6
+# Quality Techno Services — Fase 8
 
-Versión de rescate visual enfocada en elevar la percepción institucional y reducir cualquier sensación de prototipo.
+Reconstrucción total inicial del sitio basada en las referencias visuales compartidas por el cliente.
 
-## Cambios clave
-- Hero rehecho con pieza visual abstracta propia
-- Copy más sobrio y menos explicativo
-- Secciones reescritas para sonar a marca final, no a entrega interna
-- Mayor tensión visual en tarjetas, bloques y jerarquía
-- Mejor presentación de fabricantes, beneficios y CTA
+## Qué incluye
+- Home más visual y estructurada
+- Página de Soluciones
+- Página de Industrias
+- Página de Fabricantes
+- Página de Centro de Recursos
+- Página de Contacto
+- Placeholders reales para hero desktop y hero mobile
+- Layout responsive preparado para continuar el rediseño total
 
-## Ejecución
-1. Instalar dependencias con `npm install`
-2. Ejecutar en local con `npm run dev`
-3. Desplegar en Vercel o desde GitHub
+## Rutas sugeridas para imágenes futuras
+- `/public/placeholders/hero-desktop.jpg`
+- `/public/placeholders/hero-mobile.jpg`
+
+## Instalar
+1. `npm install`
+2. `npm run dev`
+3. `npm run build`
+
+## Dirección visual implementada
+- hero dominante
+- estructura corporativa moderna
+- mayor peso visual para fabricantes, soluciones e industrias
+- espacio limpio para imágenes futuras sin romper el layout

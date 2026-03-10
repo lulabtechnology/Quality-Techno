@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" fill="none">
+  <rect width="1920" height="1080" fill="#0D1B33"/>
+  <rect x="60" y="60" width="1800" height="960" rx="40" fill="url(#g)" stroke="rgba(255,255,255,0.16)"/>
+  <path d="M0 760C160 720 290 690 430 670C730 630 930 730 1240 680C1500 637 1660 540 1920 500V1080H0V760Z" fill="#142E56"/>
+  <path d="M0 840C220 780 480 760 680 790C920 826 1110 900 1360 850C1560 810 1720 720 1920 690V1080H0V840Z" fill="#1D3E74" fill-opacity="0.8"/>
+  <circle cx="1490" cy="280" r="170" fill="#F28C28" fill-opacity="0.14"/>
+  <path d="M260 700H1660" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="14 14"/>
+  <text x="240" y="240" fill="white" font-family="Arial" font-size="28" letter-spacing="6">HERO DESKTOP</text>
+  <text x="240" y="330" fill="white" font-family="Arial" font-size="78" font-weight="700">Reemplazar por imagen final</text>
+  <text x="240" y="402" fill="rgba(255,255,255,0.75)" font-family="Arial" font-size="34">Planta industrial / sistemas de bombeo / personal técnico / tuberías</text>
+  <defs>
+    <linearGradient id="g" x1="120" y1="80" x2="1680" y2="980" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#13294B"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+  </defs>
+</svg>

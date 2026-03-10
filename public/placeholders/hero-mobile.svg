@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" fill="none">
+  <rect width="1080" height="1350" fill="#0D1B33"/>
+  <rect x="40" y="40" width="1000" height="1270" rx="36" fill="url(#g)" stroke="rgba(255,255,255,0.16)"/>
+  <circle cx="770" cy="240" r="160" fill="#F28C28" fill-opacity="0.14"/>
+  <path d="M0 900C150 850 320 810 470 825C650 842 760 920 940 906C992 902 1038 892 1080 882V1350H0V900Z" fill="#1D3E74"/>
+  <text x="120" y="220" fill="white" font-family="Arial" font-size="24" letter-spacing="5">HERO MOBILE</text>
+  <text x="120" y="310" fill="white" font-family="Arial" font-size="66" font-weight="700">Reemplazar</text>
+  <text x="120" y="390" fill="white" font-family="Arial" font-size="66" font-weight="700">por imagen</text>
+  <text x="120" y="470" fill="white" font-family="Arial" font-size="66" font-weight="700">vertical final</text>
+  <text x="120" y="560" fill="rgba(255,255,255,0.75)" font-family="Arial" font-size="28">Versión mobile del hero</text>
+  <defs>
+    <linearGradient id="g" x1="80" y1="60" x2="900" y2="1240" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#13294B"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+  </defs>
+</svg>
